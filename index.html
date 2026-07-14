@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .paypal-button {
+            display: inline-block;
+            background-color: #0070ba;
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.2s;
+        }
+        .paypal-button:hover {
+            background-color: #005ea6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Watch the Video to Learn More</h2>
+   
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/kJHfqwerJRM?si=cRBIfcn58Sg7hpSD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+    <!-- PayPal Call to Action -->
+    <p>Ready to proceed? Click below to complete your payment securely via PayPal.</p>
+    <a href="https://www.paypal.com/ncp/payment/ZAT5FCYJXLNNJ" class="paypal-button" target="_blank" rel="noopener noreferrer">
+        Pay with PayPal
+    </a>
+</div>
+
+</body>
+</html>
