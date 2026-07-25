@@ -56,6 +56,14 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
   }
 
+    /* Mobile responsiveness: stack thumbnails below/above video on small screens */
+  @media (max-width: 768px) {
+    .layout-container {
+      grid-template-columns: 1fr;
+    }
+    .thumbnail-sidebar {
+      grid-template-columns: repeat(5, 1fr); /* Row of 5 on mobile */
+    }
 </style>
 
 <!-- 1. Responsive YouTube Video Section -->
